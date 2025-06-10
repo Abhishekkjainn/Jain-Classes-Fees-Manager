@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ setMenuOpen }) {
   return (
     <div className="header">
       <div className="comp">
@@ -11,7 +11,7 @@ export default function Header() {
         </div>
       </div>
       <div className="actions">
-        <div className="menubutton">
+        <div className="menubutton" onClick={() => setMenuOpen(true)}>
           <img src="/menu.png" alt="Menu icon" className="menuicon" />
         </div>
       </div>
