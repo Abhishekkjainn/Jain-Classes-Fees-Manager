@@ -11,6 +11,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
 }
 .comp{
   width: 60%;
@@ -79,7 +85,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1001;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -107,4 +113,67 @@ body{
 }
 .closeicon{
   width: 12px;
+}
+
+/*Bottombar*/
+.bottombardiv{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bottombar{
+  width:calc(90% - 8px);
+  height: 52px;
+  background-color: black;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+.tabicon{
+  width: 12px;
+  scale: 1.2;
+  margin-right: 4px;
+  margin-left: 8px;
+}
+.tabtag{
+  margin-left: 4px;
+  margin-right: 8px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.tab{
+  flex: 1;
+  height: 100%;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 40px;
+}
+.tab-active{
+  background-color: yellowgreen;
+  color: black;
+}
+.tab-active .tabicon{
+  filter: invert(1);
+}
+
+/*HomePage*/
+.homepage{
+  margin-top: 70px;
+}
+.addstudentpage{
+  margin-top: 70px;
+}
+.dashboard{
+  margin-top: 70px;
 }
